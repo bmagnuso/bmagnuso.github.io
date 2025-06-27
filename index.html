@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>LAlalalalaa!Q</h1>
-<p>Heyyyyy !</p>
-<horizontal-rule>
-<p>See random image below!</p>
+<h1>Heyyyy!</h1>
+<p>see! random image below</p>
 <img src="https://picsum.photos/200/300" alt="Random image" style="cursor:pointer;" onclick="this.src='https://picsum.photos/200/300?'+Date.now();">
-<p>Click it to do another one!</p>
+<p>click it to do another! one</p>
+<p id="test-text">this is a test, this is only a test</p>
+<script>
+const colors = ["red", "blue", "green", "purple", "orange", "teal"];
+let idx = 0;
+setInterval(() => {
+    idx = (idx + 1) % colors.length;
+    document.getElementById("test-text").style.color = colors[idx];
+}, 2000);
+</script>
 </body>
 </html>
